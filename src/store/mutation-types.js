@@ -1,0 +1,5 @@
+export const ADD_TO_CART = 'add_to_cart'
+export const ADD_COUNT = 'add_count'
+export const SAVE_PRODUCTS = 'save_products'
+export const REMOVE_PRODUCT = 'remove_product'
+export const SAVE_USER_INFO = 'save_user_info'
