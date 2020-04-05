@@ -88,6 +88,8 @@ export default {
   font-size: 0;
   padding: 5px;
   border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  margin-top: 10px;
 
   position: relative;
   .deleteButton {

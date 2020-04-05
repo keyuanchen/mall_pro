@@ -6,6 +6,8 @@
       <!-- 商品列表 -->
       <cart-list></cart-list>
     </scroll>
+    <!-- 购物车为空时 -->
+    <empty-cart-container v-else />
     <!-- 底部工具栏 -->
     <!-- <cart-bottom-bar @toBill="toBill"></cart-bottom-bar> -->
     <cart-bottom-bar></cart-bottom-bar>
@@ -18,6 +20,7 @@
 import CartNavBar from "./childrenComps/CartNavBar"
 import CartList from "./childrenComps/CartList"
 import CartBottomBar from "./childrenComps/CartBottomBar"
+import EmptyCartContainer from "./childrenComps/EmptyCartContainer"
 
 import Scroll from "@/components/common/betterscroll/BetterScroll"
 // import Toast from "@/components/common/toast/Toast"
@@ -29,7 +32,8 @@ export default {
     CartNavBar,
     CartList,
     CartBottomBar,
-    Scroll
+    Scroll,
+    EmptyCartContainer
     // Toast
   },
   data () {
@@ -69,6 +73,7 @@ export default {
 .cart {
   position: relative;
   height: 100vh;
+  background-color: #f1f1f1;
   .cart-nav-bar {
     position: relative;
     z-index: 9;

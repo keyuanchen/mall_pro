@@ -9,7 +9,11 @@
         <span>{{ totalPrice }}</span>
       </div>
     </div>
-    <div class="bar-item-right" @click="goToBill" :class="{ nobuy: checkedCount === 0 }">提交商品</div>
+    <div
+      class="bar-item-right"
+      @click="goToBill"
+      :class="{ nobuy: checkedCount === 0 }"
+    >提交商品({{checkedCount}})</div>
   </div>
 </template>
 
@@ -103,6 +107,8 @@ export default {
     color: #fff;
     font-size: 16px;
     text-align: center;
+    // 字体间距
+    letter-spacing: 1px;
     &.nobuy {
       background: #ccc;
       color: #666;
