@@ -182,7 +182,7 @@ export default {
     // 点击获取验证码
     timeCut () {
       // 倒计时
-      if (this.computeTime === 0 && this.rightPhone) {
+      if (this.computeTime === 0 && /^1[345678]\d{9}$/.test(this.phone)) {
         this.computeTime = 30
         this.intervalId = setInterval(() => {
           this.computeTime--

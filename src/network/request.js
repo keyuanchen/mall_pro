@@ -6,6 +6,7 @@ export default function request(config) {
   const instance = axios.create({
     // 想获取接口地址，私信
     baseUrl: 'http://156.66.56.32:8000/api',
+
     timeout: 5000
   })
   // return new Promise((resolve, reject) => {
