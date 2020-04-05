@@ -5,10 +5,7 @@ export default function request(config) {
   // 创建axios的一个实例
   const instance = axios.create({
     // 想获取接口地址，私信
-    // baseUrl: 'http://156.66.56.32:8000/api',
-    // baseURL: "http://152.136.185.210:8000/api/h8",
-    // baseURL: "http://123.207.32.32:8000/api/h8",
-    baseURL: "http://106.54.54.237:8000/api/h8",
+    baseUrl: 'http://156.66.56.32:8000/api',
     timeout: 5000
   })
   // return new Promise((resolve, reject) => {
