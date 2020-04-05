@@ -27,6 +27,5 @@ module.exports = {
   indexPath: 'index.html',
   filenameHashing: true,
   lintOnSave: process.env.NODE_ENV === 'production',
-  runtimeCompiler: false,
-  productionSourceMap: true
+  runtimeCompiler: false
 }
