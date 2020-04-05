@@ -7,7 +7,7 @@
     </nav-bar>
     <div class="form-container sign-up-container" v-if="!isLogin">
       <form action="#" @submit.prevent="submitForm">
-        <h1>注册</h1>
+        <h1>欢迎注册</h1>
         <div class="social-wrapper">
           <a href="#">
             <i class="iconfont icon-weixin"></i>
@@ -31,7 +31,7 @@
     </div>
     <div class="form-container sign-in-container" v-else>
       <form action="#" @submit.prevent="submitForm">
-        <h1>登录</h1>
+        <h1>欢迎登录</h1>
         <!-- 手机短信验证码登录或者用户名密码登录 -->
         <div class="loginWay">
           <div @click="loginWay=true" class="loginStyle loginSms" :class="{on: loginWay}">短信登录</div>
