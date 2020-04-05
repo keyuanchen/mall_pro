@@ -74,7 +74,7 @@ export default {
       // 分发事件给 actions
       this.$store.dispatch('removeProduct', iid)
         .then(res => {
-          console.log(res)
+          // console.log(res)
         })
     }
   },
